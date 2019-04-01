@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Availability Search - Custom Product Display
  * Description:       Applies a filter to customize the way products are displayed. Code runs directly without a settings page.
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            Extra Woo
  * Author URI:        https://extrawoo.com/
  * Text Domain: availability-search-custom-product-display
@@ -34,7 +34,7 @@ function aswb_custom_filter_product_display( $product_id ) {
 	// Shortcode for add to cart button inherits your theme styling
 	$button = do_shortcode( $shortcode );
 
-	// Translatable 
+	// Translatable
 	$price_from = __( 'Book from', 'availability-search-custom-product-display' );
 
 	// Let's make an html template. Data must be variable!
