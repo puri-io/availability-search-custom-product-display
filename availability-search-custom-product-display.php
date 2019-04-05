@@ -24,8 +24,15 @@ function aswb_custom_filter_product_display( $product_id ) {
 	// Get the Product object. We can then access it for the template.
 	$product = wc_get_product( $product_id );
 
-	$name        = $product->get_name();
-	$price       = $product->get_price();
+	error_log( print_r( $product, true ) );
+
+	$name         = $product->get_name();
+	$raw_price    = $product->get_price();
+	$display_cost = $product->get_display_cost();
+
+	// Show display price otherwise fall back to normal price
+	$price = ! empty( $display_cost ) ? wc_price( $display_cost ) : wc_price( $raw_price );
+
 	$description = $product->get_short_description();
 	$thumbnail   = woocommerce_get_product_thumbnail( $product->get_id() );
 	$link        = get_permalink( $product->get_id() );
