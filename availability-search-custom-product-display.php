@@ -57,7 +57,7 @@ function aswb_custom_filter_product_display( $product_id ) {
 					<a href='$link'>
 						<h4> $name </h4>
 						<span class='price'>
-						$price_from &#36;$price
+						$price_from $price
 						</span>
 						</a>
 						<p>
