@@ -24,8 +24,6 @@ function aswb_custom_filter_product_display( $product_id ) {
 	// Get the Product object. We can then access it for the template.
 	$product = wc_get_product( $product_id );
 
-	error_log( print_r( $product, true ) );
-
 	$name         = $product->get_name();
 	$raw_price    = $product->get_price();
 	$display_cost = $product->get_display_cost();
