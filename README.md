@@ -7,7 +7,7 @@ This is a simple plugin which serves as an example template. It utilizes a filte
 
 ## Only Supports ASWB version 1.6, which is still in development!
 
-Check the latest version here https://extrawoo.com/plugin/availablilty-search-woocommerce-bookings/
+Check the latest version here https://puri.io/plugin/availablilty-search-woocommerce-bookings/
 
 ## Short example
 
