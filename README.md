@@ -5,7 +5,7 @@ Display a customized product loop with the Availability Search for WooCommerce B
 This is a simple plugin which serves as an example template. It utilizes a filter `aswb_display_products` which passes the current product ID as a variable.
 
 
-## Only Supports ASWB version 1.6, which is still in development!
+## Only Supports ASWB version 1.6+!
 
 Check the latest version here https://puri.io/plugin/availablilty-search-woocommerce-bookings/
 
